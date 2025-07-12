@@ -1,0 +1,143 @@
+/* Container for all cards */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 10px auto;
+  position: relative;
+  width: 100%;
+}
+
+/* Button to convert currency */
+.convert-currency{
+  position: absolute;
+  right: 0;
+  background-color: aliceblue;
+}
+
+/* Card style for India and Japan*/
+.india-card, .japan-card{
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+  margin: 10px;
+}
+
+/* Title of the card */
+.title{
+  width: 100%;
+  text-align: center;
+  padding:20px 0px;
+}
+
+/* Styling for the card */
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  width: calc(100%/3);
+  position: relative;
+  height: 100%;
+  background-color: white;
+}
+  
+/* Image on top of the card */
+.card-img-top {
+  width: 100%;
+  object-fit: cover;
+  height: 200px;
+  border-radius: 5px;
+}
+  
+/* Card body */
+.card-body {
+  padding: 10px;
+  height: 200px;
+  overflow: hidden;
+}
+ 
+/* Card title */
+.card-title {
+  margin: 0;
+}
+  
+/* Card text */
+.card-text {
+  margin: 10px 0;
+}
+
+/* Card bottom section */
+.card-bottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  gap:5px;
+}
+
+/* Define the styling for the read more button */
+.btn-read-more {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* Define the styling for the price text */
+.price{
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+/* Define the styling for the read more button on hover */
+.btn-read-more:hover{
+  background-color: #303f4e;
+}
+
+/* Define the styling for the paragraph */
+.p {
+  line-height: 30px;
+}
+
+/* Media query for screen sizes smaller than 768px */
+@media screen and (max-width: 768px) {
+  /* Modify card width to fit screen */
+  .card{
+    width: 100%;
+  }
+
+  /* Modify India and Japan card to stack vertically */
+  .india-card, .japan-card{
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* Modify card bottom to fit screen */
+  .card-bottom{
+    width: 80%;
+  }
+}
+
+/* Media query for screen sizes larger than 769px */
+@media screen and (min-width:769px){
+  /* Limit card width for larger screens */
+  .card{
+    max-width: 300px;
+  }
+}
+
+/* Media query for screen sizes smaller than 600px */
+@media screen and (max-width:600px){
+  /* Hide currency label on small screens */
+  label#currencies{
+    display: none;
+  }
+}

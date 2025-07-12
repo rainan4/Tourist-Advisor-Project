@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/card_layout_Tourguide.css">
+    <link rel="stylesheet" href="css/html_layout_Tourguide.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/> <!--Css and Javascript for slick-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="script/travel_advisor_Tourguide.js"></script>
+    <title>Travel Advisor</title>
+</head>
+<body>
+    <header> <!-- start of header section -->
+        <h1>Travel Advisor</h1> <!-- main title of webpage -->
+    </header> <!-- end of header section -->
+    
+    <div class="nav-bar"> <!-- start of navigation bar section -->
+        <nav> <!-- start of navigation links -->
+            <a href="index.html" >Home</a> <!-- link to home page -->
+            <a href="page2_Tourguide.html" >Advice</a> <!-- link to advice page -->
+            <a href="page3_Tourguide.html" >Contact Us</a> <!-- link to contact page -->
+        </nav> <!-- end of navigation links -->
+    </div> <!-- end of navigation bar section -->
+    
+    <div class="main"> 
+        <div class="card-container">
+            <div class="convert-currency">
+                <!-- Currency conversion dropdown -->
+                <input type="hidden" id="cur" value="CAD"/>
+                <label id="currencies" for="currencies">Choose a currency: </label>
+                <select name="currencies" id="curID" onchange="convert()">
+                    <!-- Currency options -->
+                    <option value="CAD">CAD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="HKD">HKD</option>
+                    <option value="INR">INR</option>
+                    <option value="JPY">JPY</option>
+                </select>
+            </div>
+            <div class="title">
+                <!-- Title for India section -->
+                <h2>Explore India</h2>
+            </div>
+            <div class="p">
+                <!-- Paragraph for India section -->
+                <p>Well, every part of the country has a different story to tell, Northern India is genuinely blessed with enchanting beauty and glorious culture, one can get utterly soaked into valleys and waterfalls and lush greenery of Himalayan ranges. The western part of the country has a striking beauty of architectural marvel, and contemporary lifestyle is what people adore about this place. And we talk about the Sunderbans regions or the eastern part of India, well, no one can deny this region is blessed with the scenic beauty in the form of high hills, undulating streams and waterfalls. Lastly, the southern region is blessed with loads of plantation and vegetation, an exotic destination in a whole country, blend of alluring sites of beaches, hills and waterfalls make the tourist wants to visit again and again! So we have already given a mini-tour, there are plenty of fantastic reasons to explore India Tourism.</p>
+            </div>
+            <div class="india-card">
+                <!-- India travel cards -->
+                <div class="card">
+                    <!-- Card 1 for India -->
+                    <div class="slider">
+                        <!-- Image slider for Card 1 -->
+                        <div ><img src="images/india/ladakh.jpg" class="card-img-top" alt="ladakh"></div>
+                        <div ><img src="images/india/ladakh2.jpeg" class="card-img-top" alt="ladakh2"></div>
+                        <div ><img src="images/india/ladakh3.jpeg" class="card-img-top" alt="ladakh3"></div>
+                    </div>
+                    <div class="card-body">
+                        <!-- Card content for Card 1 -->
+                        <h5 class="card-title">Blissful Ladakh with Heavenly Kashmir</h5>
+                        <div class="card-text">
+                            <p>09 Nights / 10 days <br> Leh – Indus Valley Tour – Leh – Nubra Valley – Leh – Pangong Lake – Leh – Tso Moriri Lake – Toskar Lake – Leh – Uleytokpo – Leh</p>
+                        </div>
+                        <div class="card-bottom">
+                            <!-- Card buttons for Card 1 -->
+                            <button class="btn-read-more">Read More</button>
+                            <div class="price">Starting from $ 3000</div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="card">
+                    <!-- Card 2 for India -->
+                    <div class="slider">
+                        <!-- Image slider for Card 2 -->
+                        <div ><img src="images/india/rajasthan.jpeg" class="card-img-top" alt="rajasthan"></div>
+                        <div ><img src="images/india/rajasthan2.jpeg" class="card-img-top" alt="rajasthan2"></div>
+                        <div ><img src="images/india/rajasthan3.jpeg" class="card-img-top" alt="rajasthan3"></div>
+                    </div>
+                    <div class="card-body">
+                        <!-- Card content for Card 2 -->
+                        <h5 class="card-title">Rajasthan Offbeat Tour</h5>
+                        <div class="card-text">
+                            <p>12 Nights / 13 Days <br> Churu – Khimsar – Nimaj – Ranakpur - Dungarpur – Chittorgarh – Bundi - Sawai Madhopur – Tehla</p>
+                        </div>
+                        <div class="card-bottom">
+                            <!-- Card buttons for Card 2 -->
+                            <button class="btn-read-more">Read More</button>
+                            <div class="price">Starting from $ 4000</div>
+                        </div>
+                    </div>
+                </div>
+    
+            <div class="card">
+                <!-- Card 3 for India -->
+                <div class="slider">
+                    <!-- Image slider for Card 3 -->
+                    <div ><img src="images/india/kerala.jpg" class="card-img-top" alt="kerala"></div>
+                    <div ><img src="images/india/kerala2.jpeg" class="card-img-top" alt="kerala2"></div>
+                    <div ><img src="images/india/kerala3.jpeg" class="card-img-top" alt="kerala3"></div>
+                </div>
+                <div class="card-body">
+                    <!-- Card content for Card 3 -->
+                    <h5 class="card-title">Itinerary of Peace and Serenity in Kerala</h5>
+                    <div class="card-text">
+                        <p>14 Nights / 15 days <br> Cochin - Munnar - Periyar - Kumarakom - Alleppey - Kovalam - Trivandrum</p>
+                    </div>
+                    <div class="card-bottom">
+                        <!-- Card buttons for Card 3 -->
+                        <button class="btn-read-more">Read More</button>
+                        <div class="price">Starting from $ 5000</div>
+                    </div>
+                </div>
+            </div>
+         </div>   
+         <div class="title">
+            <h2>Explore Japan</h2>
+         </div>
+         <div class="p">
+         <p>You can explore Japan’s beautiful city, from the North to South. Hokkaido, located in the northern part of Japan, is famous for its beautiful scenery and delicious food, including seafood and curry and ramen. At Kyoto, you can experience the traditional Japanese culture, with many temples and shrines. With its unique blend of modern and traditional culture, you can feel as if you have traveled in time, which you can not experience anywhere else. In Okinawa, the southern part of Japan, you can enjoy the most beautiful clear blue oceans and relax in the warm climate. You can also enjoy many activities such as scuba diving, in the beautiful beaches. Depending on your preference, we have provided multiple options for your special time in one of the most unique and exciting countries in the world.</p></div>
+         <div class="japan-card">
+            <!-- Japan travel cards -->
+            <div class="card">
+                <!-- Card 1 for Japan -->
+                <div class="slider">
+                    <!-- Image slider for Card 1 -->
+                    <div ><img src="images/japan/kyoto1.jpg" class="card-img-top" alt="kyoto1"></div>
+                    <div ><img src="images/japan/kyoto2.jpg" class="card-img-top" alt="kyoto2"></div>
+                    <div ><img src="images/japan/kyoto3.jpg" class="card-img-top" alt="kyoto3"></div>
+                </div>
+                <div class="card-body">
+                    <!-- Card content for Card 1 -->
+                    <h5 class="card-title">Explore Old Tour in Kyoto</h5>
+                    <div class="card-text">
+                        <p>3 Days <br> Kiyomizu temple – Yasaka shrine – Arashiyama – Kinkaku temple – Ryoan temple – Ginkaku temple – Tenryu temple</p>
+                    </div>
+                    <div class="card-bottom">
+                        <!-- Card buttons for Card 1 -->
+                        <button class="btn-read-more">Read More</button>
+                        <div class="price">Starting from $ 2800</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <!-- Card 2 for Japan -->
+                <div class="slider">
+                    <!-- Image slider for Card 2 -->
+                    <div ><img src="images/japan/hokkaido1.jpg" class="card-img-top" alt="hokkaido1"></div>
+                    <div ><img src="images/japan/hokkaido2.jpg" class="card-img-top" alt="hokkaido2"></div>
+                    <div ><img src="images/japan/hokkaido3.jpg" class="card-img-top" alt="hokkaido3"></div>
+                </div>
+                    <div class="card-body">
+                        <!-- Card content for Card 2 -->
+                        <h5 class="card-title">Enjoy Japanese Foods in Hokkaido</h5>
+                        <div class="card-text">
+                        <p>7 Days <br> Sapporo city – wakkanai city – Takigawa city – Asahikawa city – Hakodate city – Kushiro city</p>
+                        </div>
+                        <div class="card-bottom">
+                            <!-- Card buttons for Card 2 -->
+                            <button class="btn-read-more">Read More</button>
+                            <div class="price">Starting from $ 3800</div>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="card">
+                <!-- Card 3 for Japan -->
+                <div class="slider">
+                    <!-- Image slider for Card 3 -->
+                    <div ><img src="images/japan/okinawa1.jpg" class="card-img-top" alt="okinawa1"></div>
+                    <div ><img src="images/japan/okinawa2.jpg" class="card-img-top" alt="okinawa2"></div>
+                    <div ><img src="images/japan/okinawa3.jpg" class="card-img-top" alt="okinawa3"></div>
+                </div>
+                <div class="card-body">
+                    <!-- Card content for Card 3 -->
+                    <h5 class="card-title">Experience Beautiful Nature Tour in Okinawa</h5>
+                    <div class="card-text">
+                        <p>8 Days <br> Naha city – Miyakojima island – Ishigaki island – Iriomoteshima island – Yonagunijima island</p>
+                        </div>
+                        <div class="card-bottom">
+                            <!-- Card buttons for Card 3 -->
+                            <button class="btn-read-more">Read More</button>
+                            <div class="price">Starting from $ 4500</div>
+                        </div>
+                </div>
+            </div>
+         </div>
+        </div>
+    </div>
+    <footer> <!-- start of footer section -->
+        <section class="footer-container"> 
+            <div class="column1"> 
+                <h3>Follow us @</h3> <!-- heading for social media links -->
+                <a href="#"><img src="images/icons/facebook-icon.png" alt="Facebook"></a> <!-- Facebook link and icon -->
+                <a href="#"><img src="images/icons/instagram-icon.png" alt="Instagram"></a> <!-- Instagram link and icon -->
+                <a href="#"><img src="images/icons/tripadvisor-logo.jpg" alt="TripAdivsor"></a> <!-- TripAdvisor link and icon -->
+                <a href="#"><img src="images/icons/twitter-logo.jpg" alt="Twitter"></a> <!-- Twitter link and icon -->
+            </div> 
+            <div class="column2"> 
+                <nav> 
+                    <ul> 
+                        <li><a href="#"><i>Frequently Asked Questions</i></a></li> <!-- FAQ page link -->
+                        <li><a href="#"><i>Terms & Conditions</i></a></li> <!-- Terms & Conditions page link -->
+                    </ul> 
+                </nav> 
+            </div> 
+        </section> 
+        
+        <section class="copyright">
+            Copyright &#169; <!-- copyright symbol -->
+        </section>
+    </footer> <!-- end of footer section -->
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Advisor</title>
+    <link rel="stylesheet" href="css/contact_us_Tourguide.css">
+    <link rel="stylesheet" href="css/html_layout_Tourguide.css">
+    <script src="script/contact_us_Tourguide.js"></script>
+</head>
+<body>
+    <header> <!-- start of header section -->
+        <h1>Contact</h1> <!-- main title of webpage -->
+    </header> <!-- end of header section -->
+    
+    <div class="nav-bar"> <!-- start of navigation bar section -->
+        <nav> <!-- start of navigation links -->
+            <a href="index.html" >Home</a> <!-- link to home page -->
+            <a href="page2_Tourguide.html" >Advice</a> <!-- link to advice page -->
+            <a href="page3_Tourguide.html" >Contact Us</a> <!-- link to contact page -->
+        </nav> <!-- end of navigation links -->
+    </div> <!-- end of navigation bar section -->
+    
+    <div class="main"> 
+        <div class="container">
+            <div class="contact-us">
+                <br>
+                <p>If you have any additional Questions, please contact us!
+                    <br><br> 
+                    We are pleased to answer any questions you may have about your travels with us.
+                    Feel free to connect with us via social media as we share our journey together!</p>
+                <br>
+                <p><strong><u>Tel:</u></strong><a href="tel: +1-800-543-9734"> 1-800-543-9734</a> </p>
+                <br>
+                <p><strong><u>Email:</u></strong><a href="mailto:tourguide@outlook.com"> tourguide@outlook.com</a></p>
+                <br>
+                <p><strong><u>Office hours:</u></strong> Monday to Friday from <em>10am-8pm </em>(PST)</p>
+                <br>
+                <p><strong><u>Address:</u></strong> 6437 Louville, Vancouver, BC V4T 5K6</p>
+            </div>
+            <div class="form">
+                <form name="myContact" action="/page3_Groupname.html" onsubmit="validateForm(); return false;" method="post">
+                    <!-- Input field for first name -->
+                    <label for="fname">Firstname:<span class="red">*</span></label>
+                    <br>
+                    <input type="text" id="fname" name="fname" pattern="[A-Za-z\s]+" required> <br>
+                    <!-- Input field for last name -->
+                    <label for="lname">Lastname: <span class="red">*</span></label><br>
+                    <input type="text" id="lname" name="lname" pattern="[A-Za-z\s]+" required>
+                    <br>
+                    <!-- Input field for email address -->
+                    <label for="email">Email:<span class="red">*</span></label>
+                    <br>
+                    <input type="email" name="email" id="email"pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" required>
+                    <br>
+                    <!-- Input field for phone number -->
+                    <label for="tel">Phone Number:<span class="red">*</span></label>
+                    <br>
+                    <input type="tel" name="tel" id="tel" pattern="^\d{10}$" required>
+                    <br>
+                    <!-- Input field for date of birth -->
+                    <label for="birthday">Date of Birth:<span class="red">*</span></label>
+                    <br>
+                    <input type="date" name="birthday" id="birthday" pattern="^\d{4}-\d{2}-\d{2}$" required>
+                    <!-- Textarea for optional message -->
+                    <p>Send us a message: (optional)</p>
+                    <textarea name="question" id="question" cols="30" rows="10" placeholder="Tell us your ideas!"></textarea>
+                    <input type="submit" value="Get the best price" >
+                </form>
+            </div>
+            <!-- Popup container to show success message -->
+            <div class="popup-container" id="popup-container" onclick="hidePopup()">
+                <div class="popup-content" id="popup-content">
+                    <img src="images/popup/successful.jpg" alt="Your Image">
+                </div>
+            </div> 
+        </div>
+    </div>
+    
+<footer> <!-- start of footer section -->
+    <section class="footer-container"> 
+        <div class="column1"> 
+            <h3>Follow us @</h3> <!-- heading for social media links -->
+            <a href="#"><img src="images/icons/facebook-icon.png" alt="Facebook"></a> <!-- Facebook link and icon -->
+            <a href="#"><img src="images/icons/instagram-icon.png" alt="Instagram"></a> <!-- Instagram link and icon -->
+            <a href="#"><img src="images/icons/tripadvisor-logo.jpg" alt="TripAdivsor"></a> <!-- TripAdvisor link and icon -->
+            <a href="#"><img src="images/icons/twitter-logo.jpg" alt="Twitter"></a> <!-- Twitter link and icon -->
+        </div> 
+        <div class="column2"> 
+            <nav> 
+                <ul> 
+                    <li><a href="#"><i>Frequently Asked Questions</i></a></li> <!-- FAQ page link -->
+                    <li><a href="#"><i>Terms & Conditions</i></a></li> <!-- Terms & Conditions page link -->
+                </ul> 
+            </nav> 
+        </div> 
+    </section> 
+    
+    <section class="copyright">
+        Copyright &#169; <!-- copyright symbol -->
+    </section>
+</footer> <!-- end of footer section -->
+</body>
+</html>

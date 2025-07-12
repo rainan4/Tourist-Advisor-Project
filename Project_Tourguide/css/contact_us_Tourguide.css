@@ -1,0 +1,167 @@
+/* Create a container to hold the two main sections */
+.container {
+    width: 100%;
+    height: 100%;
+    flex-wrap: nowrap;
+    display: flex;
+}
+
+/* Style for the contact form section */
+.form {
+    width: 50%;
+    height: 50%;
+    background-color: palevioletred;
+    float: right;
+    display: flex;
+    margin-top: 20px;
+    color: white;
+    border: 1px solid;
+    padding: 20px 20px 60px 20px;
+    box-shadow: 0px 20px rgb(92, 92, 92);
+    font-size: 20px;
+}
+
+/* Style for the contact information section */
+.contact-us {
+    float: left;
+    margin: 20px 10px 0px 10px;
+    background-color: palevioletred;
+    border: 1px solid grey;
+    padding: 10px;
+    box-shadow: 10px 20px rgb(92, 92, 92);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 20px;
+}
+
+/* Style for the heading in the contact information section */
+.contact-us h2 {
+    text-align: center;
+    border: 4px solid white;
+    letter-spacing: 5px;
+    background-color: #85204897;
+    padding: 10px;
+}
+
+/* Style for the paragraphs in the contact information section */
+.contact-us p{
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Style for text with the class "red" */
+.red {
+    color: rgb(185, 23, 23);
+}
+
+/* Style for the heading in the contact form section */
+.form h2 {
+    text-align: center;
+    border: 4px solid white;
+    letter-spacing: 5px;
+    background-color: #85204897;
+    padding: 10px;
+    margin-left: 40px;
+}
+
+/* Style for labels, inputs, paragraphs, and text areas in the contact form section */
+label,
+input,
+p,
+textarea {
+    margin-left: 40px;
+}
+
+/* Style for text areas in the contact form section */
+textarea{
+    width: 90%;
+}
+
+/* Style for the submit button in the contact form section */
+.form input[type=submit] {
+    background-color: white;
+    border: none;
+    padding: 10px 5px;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+/* Style for the date input in the contact form section */
+.form input[type=date] {
+    cursor: pointer;
+}
+
+/* Style for all inputs in the contact form section */
+input {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+/* Style for invalid input in the contact form section */
+input:invalid {
+    border: 2px solid red;
+}
+
+/* Style for valid input in the contact form section */
+input:valid {
+    border: 2px solid green;
+}
+
+/* Style for the popup container */
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+ 
+/* Style for the popup content */
+.popup-content {
+    background-color: #fff;
+    max-width: 40%;
+    max-height: 60%;
+    display: flex;
+    align-items: center;
+}
+
+/* Style for the popup content image*/
+.popup-content img {
+    max-width: 100%;
+    max-height: 100%;
+}
+  
+@media screen and (max-width: 768px) {
+    /* Changes the width of the form when the screen width is less than or equal to 768px */
+    .form{
+        width: 100%;
+    }
+    /* Changes the flex direction of the container when the screen width is less than or equal to 768px */
+    .container{
+        flex-direction: column;
+    }
+    /* Changes the max width of the popup content when the screen width is less than or equal to 768px */
+    .popup-content {
+        max-width: 65%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    /* Changes the inline size of the form when the screen width is greater than or equal to 768px */
+    .form{
+        inline-size: 30%;
+    }
+}

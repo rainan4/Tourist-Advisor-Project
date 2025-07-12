@@ -1,0 +1,52 @@
+/* CSS for the info container */
+.info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  background-color: pink;
+}
+
+/* CSS for the rows inside the info container */
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+/* CSS for the paragraphs inside the rows */
+.row p {
+  vertical-align: center;
+  padding: 70px;
+  background-color: aliceblue;
+  line-height: 45px;
+  font-size: 20px;
+}
+
+/* CSS for the headings inside the rows */
+.row h1 {
+  padding: 20px 0px;
+  width: 100%;
+  text-align: center;
+}
+
+/* CSS for responsive design for screens with maximum width of 768px */
+@media screen and (max-width: 768px) {
+  /* Make info container width 100% and text centered */
+  .info-container {
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Change row direction to column and width to 100% */
+  .row {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  /* Make iframes inside rows width 100% */
+  .row iframe {
+    width: 100%;
+  }
+}
